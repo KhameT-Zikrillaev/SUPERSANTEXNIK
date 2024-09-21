@@ -1,0 +1,30 @@
+
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Установите высоту для html и body */
+  margin: 0; /* Уберите отступы по умолчанию */
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column; /* Выравнивание по вертикали */
+  min-height: 100vh; /* Минимальная высота — 100% высоты экрана */
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1440px;
+ 
+  width: 100%;
+  border:1px solid red;
+  margin:0 auto;
+}
