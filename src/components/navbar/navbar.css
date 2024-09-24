@@ -1,38 +1,55 @@
 /* Comment Aziz */
-.header-logo img {
+.navbar-logo img {
     width: 70px;
     height: 70px;
   
 }
 
-.header-logo {
+.navbar-logo {
     display: flex;
     align-items: center;
 }
 
-.header-logo__text {
+.navbar-logo__text {
     text-transform: capitalize;
-    font-size: 10px;
+    font-size: 16px;
+    color:white;
+    font-weight: 600;
+     font-family: Arial, Helvetica, sans-serif;
 }
-/* Close Aziz */
+
 
 .navbar {
     width: 100%;
     display: flex;
     align-items: center;
-    height: 80px;
+    height: 90px;
 }
 
-
+.navbar__menu{
+   margin-left: auto;
+}
 .navbar__menu-ul {
+    margin-left: auto;
     display: flex;
-    gap: 15px;
-
+    gap: 20px;
     @media screen and (max-width:768px) {
         display: none;
     }
 }
-
+.navbar__menu-ul li{
+    a{
+        color:white;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a:hover{
+        color:#14F4FF;
+        transition: 0.5s;
+    }
+  
+}
 .nav__burger-btn {
     width: 20px;
     height: 20px;
@@ -188,3 +205,12 @@
     }
 }
 
+.navbar__linear-1{
+    filter: invert(80%) brightness(120%) blur(3px);
+
+
+}
+.navbar__linear-2{
+    filter: invert(80%) brightness(120%) blur(3px);
+    margin-left: -80px;
+}
