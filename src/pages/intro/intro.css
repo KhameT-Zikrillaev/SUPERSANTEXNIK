@@ -1,0 +1,15 @@
+.Intro{
+    height: 500px;
+    border:1px solid red;
+    background: #020305;
+    position: relative;
+}
+.Intro__circle-photo{
+    position: absolute;
+    height: 100%;
+    right:15%;
+    filter: drop-shadow(15px 15px 120px #4495D9 );
+}
+.Intro__text-title{
+    color:white;
+}
