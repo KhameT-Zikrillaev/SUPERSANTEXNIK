@@ -4,9 +4,9 @@ import './footer.css'; // Импортируем стили (по желанию
 // ----------------img------------------------------------
 import footerLogo from "/logo.webp"
 import footerRightImg from "/footer-right-quest.png"
-import footerPhone from "/footer-right-quest.png"
-import footerTelegram from "/footer-right-quest.png"
-import footerMessage from "/footer-right-quest.png"
+import footerPhone from "/footer-social-phone.png"
+import footerTelegram from "/footer-social-telegram.svg"
+import footerMessage from "/footer-social-message.png"
 // ---------------closed img------------------------------
 const Footer = () => {
   return (
@@ -16,11 +16,11 @@ const Footer = () => {
           <div className="footer-left">
             <div className="footer-logo">
               <img src={footerLogo} alt="footer-logo" />
-              <p className="footer__text">Супер <br /> Сантехник</p>
+              <p className="footer-text">Супер <br /> Сантехник</p>
             </div>
             <div className="footer-contact">
-              <p>+998(99) 302-45-12</p>
-              <p>+998(99) 302-45-12</p>
+              <a href="tel:+998993024512">+998 (99) 302-45-12</a>
+              <a href="tel:+998993024512">+998 (99) 302-45-12</a>
             </div>
 
             <div className="footer-social">
@@ -38,7 +38,7 @@ const Footer = () => {
               <input type="text" placeholder='ИМЯ' />
               <input type="text" placeholder='E-MAIL' />
               <input type="text" placeholder='ТЕЛЕФОН' />
-              <input type="text" placeholder='ВАШЕ СООБЩЕНИЕ' />
+              <textarea name="" id="" cols="30" rows="10" placeholder='ВАШЕ СООБЩЕНИЕ'></textarea>
               <button className='footer-btn' type='submit'>ОТПРАВИТЬ</button>
             </form>
           </div>

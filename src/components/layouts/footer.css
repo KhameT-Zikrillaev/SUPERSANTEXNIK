@@ -1,7 +1,37 @@
+.footer-wrapper {
+    display: flex;
+    gap: 20px;
+    
+}
+
+
+.footer-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 55px 0 55px;
+    border: 1px solid purple;
+}
+
+
+.footer-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 10px 0 10px;
+    border: 1px solid purple;
+
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-logo img {
     width: 70px;
     height: 70px;
-  
+
 }
 
 .footer-logo {
@@ -12,4 +42,9 @@
 .footer-logo__text {
     text-transform: capitalize;
     font-size: 10px;
+}
+
+
+.footer-telegram {
+    width: 60px;
 }
