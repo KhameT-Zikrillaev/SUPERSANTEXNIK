@@ -1,0 +1,15 @@
+.footer-logo img {
+    width: 70px;
+    height: 70px;
+  
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo__text {
+    text-transform: capitalize;
+    font-size: 10px;
+}
