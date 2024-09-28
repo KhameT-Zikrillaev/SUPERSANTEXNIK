@@ -1,6 +1,7 @@
 .browsers{
     background:#4495D9 ;
     padding:15px 0px;
+    padding-top: 90px;
 }
 .browsers__con{
     display: flex;

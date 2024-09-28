@@ -1,3 +1,6 @@
 .header{
   background: linear-gradient(to bottom, #30383C 0%, #30383C 80%, #4495D9 100%);  
+  width: 100%;
+  position: fixed;
+  z-index: 5;
 }

@@ -1,0 +1,71 @@
+
+.accordion{
+    max-width: 800px;
+    width: 100%;
+    padding:10px;
+    margin:0 auto;
+}
+.Faq__Title{
+    text-align: center;
+    margin: 25px 5px;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    position: relative;
+    background: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+  }
+  
+  .accordion-header .arrow {
+    position: absolute;
+    border:1px dashed #4495D9;
+    border-radius: 50%;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+    transform: rotate(0deg);
+    opacity: 70%;
+  }
+  .accordion-header .arrow:hover{
+    opacity: 100%;
+  }
+  .accordion-header .arrow svg{
+    opacity: 70%;
+    padding: 4px;
+  }
+  
+  .accordion-header.active .arrow {
+    transform: rotate(-90deg); /* Поворачиваем стрелку на 90 градусов вниз */
+  }
+  
+  .accordion-content p {
+    padding: 10px;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 80%;
+    font-family: 400;
+    color:#002c50;
+  }
+  .accordion-item-linear{
+    width: 99%;
+    margin:0 auto;
+    height: 1px;
+    margin-top: 5px;
+    background: rgba(15, 15, 15,0.1);
+    display: block;
+}

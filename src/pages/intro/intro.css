@@ -1,15 +1,263 @@
 .Intro{
-    height: 500px;
-    border:1px solid red;
-    background: #020305;
+    background: linear-gradient(to top, #30383C 0%, #30383C 95%, #4495D9 100%);  
+}
+.relativ{
+    height: 600px;
     position: relative;
+    @media screen and (max-width:768px) {
+        height: 740px;
+   }
 }
 .Intro__circle-photo{
     position: absolute;
-    height: 100%;
-    right:15%;
+    height: 90%;
+    right:5%;
+    bottom:0;
     filter: drop-shadow(15px 15px 120px #4495D9 );
+    z-index: 0;
+    @media screen and (max-width:768px) {
+         opacity: 50%;
+         right: 0%;
+        width: 80%;
+    }
+    @media screen and (max-width:480px) {
+       width: 100%;
+   }
 }
-.Intro__text-title{
+.Intro__text{
+    position: absolute;
+    z-index: 1;
+    @media screen and (max-width:768px) {
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+}
+.Intro__text-title-1{
     color:white;
+    font-size: 52px;
+    max-width: 580px;
+    width: 100%;
+     padding-top: 60px;
+     margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    @media screen and (max-width:768px) {
+        width: 400px;
+        flex-direction: column;
+        font-size: 32px;
+        text-align: center;
+        margin-left: 0px;
+        padding-top: 60px;
+   }
+   @media screen and (max-width:480px) {
+    width: 300px;
+
+}
+}
+.Intro__text-title-2{
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    color:white;
+    @media screen and (max-width:768px) {
+        max-width: 300px;
+        font-size: 18px;
+        text-align: center;
+        margin-left: 0px;
+   }
+}
+.Intro__text-title-2 span{
+    color:#4495D9
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BTN~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.btn__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        margin-left: 0px;
+   }
+}
+
+.btn__send-1,
+.btn__send-2 {
+    padding: 15px 40px;
+    border: 2px solid #4495D9;
+    border-radius: 10px;
+    background-color: #4495D9;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    @media screen and (max-width:480px) {
+        padding: 10px 30px;
+       text-align: center;
+   }
+}
+
+
+.btn__send-2 {
+    background-color: transparent;
+    color: #4495D9;
+}
+.btn__send-1:hover {
+    background-color: #4495D9;
+    color: white;
+}
+
+.btn__send-2:hover {
+    background-color: #4495D9;
+    color: white;
+}
+
+
+.btn__send-1::before,
+.btn__send-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 10%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+    transition: all 0.4s ease;
+    animation: slideThrough 4s infinite;
+    
+}
+
+
+@keyframes slideThrough {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: 150%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+
+.btn__send-1:active,
+.btn__send-2:active {
+    transform: scale(0.98);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~info~~~~~~~~~~~~~~~~~~~~~~~ */
+.info__container{
+ display: flex;
+ flex-wrap: wrap;
+ padding:0px 15px;
+ gap:20px;
+ margin-top: 60px;
+ @media screen and (max-width:768px) {
+    margin-top: 20px;
+    flex-direction: column;
+}
+}
+.info__container-card{
+    display: flex;
+}
+.info__container-card {
+    position: relative; /* Чтобы разместить фон относительно родительского элемента */
+    display: inline-flex; /* Центрируем содержимое */
+    justify-content: center;
+    align-items: center;
+}
+
+.info__container-card-icon {
+    position: relative; /* Убедимся, что иконка находится поверх фона */
+    display: flex; /* Для центрирования содержимого */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Ширина иконки */
+    height: 40px; /* Высота иконки */
+}
+
+/* Вращающийся фон */
+.info__container-card-background {
+    background: rgba(0, 87, 250, 0.5); /* Синий фон */
+    clip-path: polygon(
+        50% 0%, 
+        100% 25%, 
+        100% 75%, 
+        50% 100%, 
+        0% 75%, 
+        0% 25%,
+        0% 50%, 
+        25% 100%, 
+        75% 100%, 
+        100% 50%, 
+        75% 0%, 
+        25% 0% 
+    );
+    animation: rotate 10s linear infinite; /* Вращение фона */
+    position: absolute; /* Позволяет разместить фон под иконкой */
+    top: 50%; /* Центрируем фон по вертикали */
+    left: 50%; /* Центрируем фон по горизонтали */
+    width: 100%; /* Занимает всю ширину родителя */
+    height: 100%; /* Занимает всю высоту родителя */
+    transform: translate(-50%, -50%); /* Сдвигаем фон, чтобы центрировать его */
+    z-index: 0; /* Фон находится под иконкой */
+}
+
+/* Вращение фона */
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg); /* Начальное положение */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg); /* Полный поворот */
+    }
+}
+/* Иконка */
+.info__container-card-icon svg {
+    position: relative; /* Убедимся, что иконка находится поверх фона */
+    z-index: 1; /* Помещаем иконку над фоном */
+    width: 30px; /* Задаем размер иконки */
+    height: 30px; /* Задаем размер иконки */
+}
+
+
+.info__container-card-text {
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    opacity: 0; /* Начальное состояние: невидимый */
+    transform: translateY(20px); /* Сдвинут вниз */
+    animation: fadeInUp 1.5s forwards, pulse 1.5s infinite; /* Применяем обе анимации */
+    animation-delay: 0.3s; /* Задержка перед началом анимации */
+}
+
+/* Определяем анимацию появления и пульсации */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0; /* Начальное состояние: невидимый */
+        transform: translateY(20px); /* Сдвинут вниз */
+    }
+    100% {
+        opacity: 1; /* Конечное состояние: видимый */
+        transform: translateY(0); /* Возвращаем в исходное положение */
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

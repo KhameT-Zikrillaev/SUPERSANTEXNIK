@@ -2,7 +2,6 @@
 .navbar-logo img {
     width: 70px;
     height: 70px;
-  
 }
 
 .navbar-logo {
@@ -24,6 +23,7 @@
     display: flex;
     align-items: center;
     height: 90px;
+    
 }
 
 .navbar__menu{
@@ -38,6 +38,7 @@
     }
 }
 .navbar__menu-ul li{
+    
     a{
         color:white;
         font-size: 18px;
@@ -59,7 +60,7 @@
     position: relative;
     transition: 0.5s;
     margin-left: auto;
-
+    margin-right: 10px;
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -70,7 +71,7 @@
 }
 
 .nav__burger-btn .sp.active {
-    background: black;
+    background: white;
 }
 
 .nav__burger-btn .sp:nth-child(1) {
@@ -111,7 +112,6 @@
     justify-content: center;
     position: relative;
     z-index: 99;
-
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -171,14 +171,15 @@
     gap: 16px;
     width: 100%;
     height: 100dvh;
-    background: red;
+    background: #30383C;
     position: absolute;
     left: 0;
-    top: -100%;
+    top: -100dvh;
     transition: 1s;
     justify-content: center;
     align-items: center;
-
+     z-index: 1;
+    
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -192,14 +193,16 @@
     gap: 30px;
     font-size: 32px;
     text-align: center;
+    
 }
-
+.navbar__menu-burger-ul li a{
+    color:white;
+}
 .activenavigation {
     transition: 1s;
     z-index: 1;
     top: 0;
     justify-content: space-between;
-
     @media screen and (min-width:768px) {
         display: none;
     }
@@ -208,9 +211,14 @@
 .navbar__linear-1{
     filter: invert(80%) brightness(120%) blur(3px);
 
-
+    @media screen and (max-width:480px) {
+        display: none;
+    }
 }
 .navbar__linear-2{
     filter: invert(80%) brightness(120%) blur(3px);
     margin-left: -80px;
+        @media screen and (max-width:480px) {
+        display: none;
+    }
 }
