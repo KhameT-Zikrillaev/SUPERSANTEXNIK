@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Navbar.css'; // Импортируем стили (по желанию)
+import './navbar.css'; // Импортируем стили (по желанию)
 
 
 // img
