@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./intro.css";
-
+import introimages from '../../assets/images/intro__photo.png'
 const Intro = () => {
   return (
     <>
@@ -8,7 +8,7 @@ const Intro = () => {
         <div className="container relativ">
           <img
             className="Intro__circle-photo"
-            src="./src/assets/images/intro__photo.png"
+            src={introimages}
             alt=""
           />
           <div className="Intro__text">
