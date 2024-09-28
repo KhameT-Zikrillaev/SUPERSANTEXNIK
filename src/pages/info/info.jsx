@@ -6,7 +6,7 @@ const Info = () => {
     return (
         <>
          <section className='Info'>
-          <img src="./src/assets/images/info-photos.jpg" alt="" />
+           <div className="Info__background"></div>
           <div className="container">
             
           </div>

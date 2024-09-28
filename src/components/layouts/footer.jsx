@@ -4,17 +4,15 @@ import './footer.css'; // Импортируем стили (по желанию
 // ----------------img------------------------------------
 import footerLogo from "/logo.webp"
 import footerRightImg from "/footer-right-quest.png"
-import footerPhone from "/footer-social-phone.png"
-import footerTelegram from "/footer-social-telegram.svg"
-import footerMessage from "/footer-social-message.png"
+
 // ---------------closed img------------------------------
 const Footer = () => {
   return (
     <footer className='footer'>
-       <div className="footer-blue__fix-1">
+       <div className="footer-blue__fix-one">
 
       </div>
-      <div className="footer-blue__fix-2">
+      <div className="footer-blue__fix-two">
 
       </div>
       <div className="container">
