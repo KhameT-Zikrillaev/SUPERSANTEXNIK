@@ -1,6 +1,6 @@
 import React,{ useState } from 'react';
 import './about.css'; 
-
+import photos from '../../assets/images/666.svg'
 const About = () => {
 
     return (
@@ -10,7 +10,7 @@ const About = () => {
           <div className="about__content-grid">
           <div className="about__content-grid-card">
             <div className='about__content-grid-card-photos'>
-            <img  src="./src/assets/images/666.svg" alt="" />
+            <img  src={photos} alt="" />
             <h3>1</h3>
             </div>
             <div className="about__content-grid-card-text-con">
@@ -20,7 +20,7 @@ const About = () => {
           </div>
           <div className="about__content-grid-card">
             <div className='about__content-grid-card-photos'>
-            <img  src="./src/assets/images/666.svg" alt="" />
+            <img  src={photos} alt="" />
             <h3>2</h3>
             </div>
             <div className="about__content-grid-card-text-con">
@@ -30,7 +30,7 @@ const About = () => {
           </div>
           <div className="about__content-grid-card">
             <div className='about__content-grid-card-photos'>
-            <img  src="./src/assets/images/666.svg" alt="" />
+            <img  src={photos} alt="" />
             <h3>3</h3>
             </div>
             <div className="about__content-grid-card-text-con">
@@ -42,7 +42,7 @@ const About = () => {
 
           <div className="about__content-grid-card">
             <div className='about__content-grid-card-photos'>
-            <img  src="./src/assets/images/666.svg" alt="" />
+            <img  src={photos} alt="" />
             <h3>4</h3>
             </div>
             <div className="about__content-grid-card-text-con">
@@ -53,18 +53,19 @@ const About = () => {
           
           <div className="about__content-grid-card">
             <div className='about__content-grid-card-photos'>
-            <img  src="./src/assets/images/666.svg" alt="" />
+            <img  src={photos} alt="" />
             <h3>5</h3>
             </div>
             <div className="about__content-grid-card-text-con">
-               <h4>>100</h4>
+               <h4>&gt;100</h4>
+          
                <p>Положительных отзывов ежемесячно</p>
             </div>
           </div>
 
           <div className="about__content-grid-card">
             <div className='about__content-grid-card-photos'>
-            <img  src="./src/assets/images/666.svg" alt="" />
+            <img  src={photos} alt="" />
             <h3>6</h3>
             </div>
             <div className="about__content-grid-card-text-con">

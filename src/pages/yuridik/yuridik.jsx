@@ -1,6 +1,7 @@
 import React,{ useState } from 'react';
 import './yuridik.css'; 
-
+import photo1 from '../../assets/images/y-photos-1.png'
+import photo2 from '../../assets/images/y-photos-2.png'
 const Yuridik = () => {
 
     return (
@@ -8,8 +9,8 @@ const Yuridik = () => {
          <section className='Yuridik'>
           <div className="container yuridik-con">
             <div className="Yuridik__photos-con">
-            <img className="Yuridik__photos-con-photo-1" src="./src/assets/images/y-photos-1.png" alt="" />
-            <img className="Yuridik__photos-con-photo-2" src="./src/assets/images/y-photos-2.png" alt="" />
+            <img className="Yuridik__photos-con-photo-1" src={photo1} alt="" />
+            <img className="Yuridik__photos-con-photo-2" src={photo2} alt="" />
             </div>
 
             <div className="Yuridik__text-con">

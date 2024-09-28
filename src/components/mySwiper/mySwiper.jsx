@@ -6,7 +6,11 @@ import './myswiper.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
+import swiperphoto1 from '../../assets/images/photos-1.png'
+import swiperphoto2 from '../../assets/images/photos-2.png'
+import swiperphoto3 from '../../assets/images/photos-3.png'
+import swiperphoto4 from '../../assets/images/photos-4.png'
+import swiperphoto5 from '../../assets/images/photos-5.png'
 // import required modules
 import { Pagination, Navigation} from 'swiper/modules';
 
@@ -35,7 +39,7 @@ export default function App() {
       >
         <SwiperSlide className='swiper-card'>
             <div className='swiper-card__img-circle'></div>
-              <div className='swiper-card__img-photos'><img  src="./src/assets/images/photos-1.png" alt="" /></div>
+              <div className='swiper-card__img-photos'><img  src={swiperphoto1} alt="" /></div>
               
             <h3>
             Гарантируем качество работ
@@ -47,7 +51,7 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide className='swiper-card'>
         <div className='swiper-card__img-circle'></div>
-        <div className='swiper-card__img-photos'><img  src="./src/assets/images/photos-2.png" alt="" /></div>
+        <div className='swiper-card__img-photos'><img  src={swiperphoto2} alt="" /></div>
         <h3>
              Быстро и надежно
             </h3>
@@ -57,19 +61,19 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide className='swiper-card'>
         <div className='swiper-card__img-circle'></div>
-        <div className='swiper-card__img-photos'><img  src="./src/assets/images/photos-3.png" alt="" /></div>
+        <div className='swiper-card__img-photos'><img  src={swiperphoto3} alt="" /></div>
             <h3>Доступные цены и честный расчет</h3>
             <p>"Прозрачное ценообразование — наш приоритет. Мы предлагаем доступные цены без скрытых затрат. Вы всегда будете знать окончательную стоимость работ до их начала, чтобы чувствовать себя уверенно и защищено."</p>
         </SwiperSlide>
         <SwiperSlide className='swiper-card'>
         <div className='swiper-card__img-circle'></div>
-        <div className='swiper-card__img-photos'><img  src="./src/assets/images/photos-4.png" alt="" /></div>
+        <div className='swiper-card__img-photos'><img  src={swiperphoto4} alt="" /></div>
             <h3>Индивидуальный подход к каждому клиенту</h3>
             <p>"Каждый заказ — это уникальная задача, и мы готовы предложить индивидуальные решения для вашего комфорта. От простого ремонта до установки сложных систем — мы подбираем оптимальные варианты, которые соответствуют вашим потребностям и бюджету."</p>
         </SwiperSlide>
         <SwiperSlide className='swiper-card'>
         <div className='swiper-card__img-circle'></div>
-        <div className='swiper-card__img-photos'><img  src="./src/assets/images/photos-5.png" alt="" /></div>
+        <div className='swiper-card__img-photos'><img  src={swiperphoto5} alt="" /></div>
             <h3>Опытные специалисты и современное оборудование</h3>
             <p>"Наши мастера — это команда профессионалов с многолетним опытом работы. Мы используем только проверенные материалы и современное оборудование, чтобы гарантировать долговечность и надежность всех выполненных работ."</p>
         </SwiperSlide>
