@@ -39,7 +39,7 @@ const Footer = () => {
                     <path d="M12.2764 23.3439L12.6182 18.1807L21.9926 9.73395C22.4076 9.35555 21.9071 9.17246 21.3578 9.50203L9.78633 16.8136L4.78177 15.2268C3.70763 14.9216 3.69542 14.177 5.0259 13.6399L24.5193 6.1209C25.4103 5.7181 26.2647 6.34061 25.923 7.70771L22.6029 23.3439C22.371 24.4547 21.6996 24.7232 20.7719 24.2105L15.7186 20.4754L13.2895 22.8312C13.0088 23.112 12.7769 23.3439 12.2764 23.3439Z"></path>
                 </svg>
                 </div>
-                <h3> t.me/santenika</h3>
+                <h3> t.me/santexnik</h3>
                 </a>
               <a href="/" className='footer-social__link'>
               <div className='footer-social__link__img'>
@@ -47,7 +47,7 @@ const Footer = () => {
                     <path d="M12.2764 23.3439L12.6182 18.1807L21.9926 9.73395C22.4076 9.35555 21.9071 9.17246 21.3578 9.50203L9.78633 16.8136L4.78177 15.2268C3.70763 14.9216 3.69542 14.177 5.0259 13.6399L24.5193 6.1209C25.4103 5.7181 26.2647 6.34061 25.923 7.70771L22.6029 23.3439C22.371 24.4547 21.6996 24.7232 20.7719 24.2105L15.7186 20.4754L13.2895 22.8312C13.0088 23.112 12.7769 23.3439 12.2764 23.3439Z"></path>
                 </svg>
                 </div>
-                <h3>santexnika@gmail.ru</h3>
+                <h3>santexnik@gmail.ru</h3>
                 </a>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
               <input type="text" placeholder='ИМЯ' />
               <input type="text" placeholder='E-MAIL' />
               <input type="text" placeholder='ТЕЛЕФОН' />
-              <textarea name="" id="" cols="30" rows="10" placeholder='ВАШЕ СООБЩЕНИЕ'></textarea>
+              <textarea name="" id="" cols="30" rows="8" placeholder='ВАШЕ СООБЩЕНИЕ'></textarea>
               <button className='footer-btn' type='submit'>ОТПРАВИТЬ</button>
             </form>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
           <img  className='footer-wrapper-img' src="./src/assets/images/footerphoto.png" alt="" />
         </div>
         <div className="foote-company">
-            <h3 className='foote-company-text'>© 2023-2024. ООО "Super-Santexnika"</h3>
+            <h3 className='foote-company-text'>© 2023-2024. ООО "Super-Santexnik"</h3>
         </div>
 
       </div>

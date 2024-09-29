@@ -8,7 +8,7 @@ const Info = () => {
          <section className='Info'>
            <div className="Info__background"></div>
           <div className="container">
-            
+             <h3 className='Info__text'>С  нами <p>всё просто</p></h3>
           </div>
          </section>
         </>
