@@ -15,12 +15,15 @@ const Yuridik = () => {
 
             <div className="Yuridik__text-con">
                 <h3 className='Yuridik__text-con-title'>ЮРИДИЧЕСКИМ ЛИЦАМ</h3>
-                <p className='Yuridik__text-con-text'>Оказываем услуги для юридических лиц и организаций Ташкента и области по устранению засоров, прочистка канализации, электрика и сварочные работы <u>— безналичный расчет</u></p>
+                <p className='Yuridik__text-con-text'>Оказываем услуги для юридических лиц и организаций Ташкента и области по устранению засоров, прочистка канализации, электрика и сварочные работы <br/> <u>— безналичный расчет</u></p>
                 <div className="Yuridik__text-con-btns">
                 <h4 className="Yuridik__text-con-btns-title">Бесплатная Онлайн Консультация</h4>
-                <a href="" className="Yuridik__text-con-btns-btn">Написать телеграмм</a>
+                <button className='Yuridik__text-con-btns-btn' type='submit'>Телеграмм написать</button>
                 </div>
             </div>
+          </div>
+          <div className="Yuridik__backround">
+
           </div>
          </section>
         </>
