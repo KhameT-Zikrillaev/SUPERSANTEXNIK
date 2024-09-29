@@ -15,12 +15,11 @@ const Contact = () => {
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-2.71A19.51 19.51 0 0 1 3.87 12.8 19.8 19.8 0 0 1 1.16 4.37 2 2 0 0 1 3.09 2h3a2 2 0 0 1 2 1.72c.09.66.21 1.31.36 1.95a2 2 0 0 1-.45 1.85l-1.27 1.27a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 1.85-.45c.64.15 1.29.27 1.95.36a2 2 0 0 1 1.72 2z"/>
               </svg>
              </a>
-              <h3  className='browsers__contact-link-text'>8-800-333-05-78</h3>
+              <h3  className='browsers__contact-link-text'>+998(99)3024512</h3>
              </div>
 
              <div class="browsers__browsers">
-    
-                <a href="https://ru-ru.facebook.com/" class="browsers__browsers-link"><svg class="browsers__browsers-link-icon" width="40" height="40" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
+                    <a href="https://ru-ru.facebook.com/" class="browsers__browsers-link"><svg class="browsers__browsers-link-icon" width="40" height="40" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.2036 16.3438L19.7145 13.0158H16.521V10.8561C16.521 9.9458 16.9669 9.05791 18.3973 9.05791H19.849V6.2247C19.849 6.2247 18.5318 6 17.2721 6C14.6423 6 12.9234 7.59418 12.9234 10.4797V13.0164H10V16.3444H12.9234V24.39H16.521V16.3444L19.2036 16.3438Z"></path>
                 </svg></a>
                 <a href="https://www.instagram.com/" class="browsers__browsers-link"><svg class="browsers__browsers-link-icon" width="40" height="40" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
