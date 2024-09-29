@@ -18,9 +18,11 @@
     @media screen and (max-width:768px) {
          opacity: 50%;
          right: 0%;
-        width: 80%;
+           height: 80%;
+           width: 80%;
     }
     @media screen and (max-width:480px) {
+        
        width: 100%;
    }
 }
