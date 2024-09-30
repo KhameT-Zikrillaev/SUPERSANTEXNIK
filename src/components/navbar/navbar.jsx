@@ -33,7 +33,7 @@ const Navbar = () => {
                 <img src={headerLogo} alt="navbar-logo" />
                 <p className="navbar-logo__text">Супер <br /> Сантехник</p>
             </div>
-            <h4>{t('Hello')}</h4> {/* Используем t для перевода "Hello" */}
+
             <div className="navbar__menu">
                 <ul className="navbar__menu-ul">
                     <li><a href="/">{t('Home')}</a></li> {/* Добавляем перевод для элементов меню */}
@@ -42,13 +42,13 @@ const Navbar = () => {
                     <li><a href="/contact">{t('Contact')}</a></li>
                 </ul>
             </div>
-            
+
             <div className="navbar__locales">
                 <button onClick={() => handleLanguageChange('uz')}>UZ</button>
                 <button onClick={() => handleLanguageChange('ru')}>RU</button>
                 <button onClick={() => handleLanguageChange('en')}>EN</button>
             </div>
-            
+
             <img className="navbar__linear-1" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
             <img className="navbar__linear-2" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
 

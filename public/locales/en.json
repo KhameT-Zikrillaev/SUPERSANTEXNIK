@@ -1,29 +1,73 @@
 {
     "intro": {
-        "title": "Turnkey electrical and plumbing services in Tashkent and the region",
-        "subtitle": {
-            "first": "Order a master right now and",
-            "second": "get a 17% discount",
-            "third": "on all types of services!"
+      "title": "Turnkey electrical and plumbing services in Tashkent and the region",
+      "subtitle": {
+        "first": "Order a technician right now and",
+        "second": "get a 17% discount",
+        "third": "on all types of services!"
+      },
+      "btn": {
+        "left": "Call a Technician",
+        "right": "Message on Telegram 24/7"
+      },
+      "check": {
+        "first": {
+          "before": "Free arrival in",
+          "after": " 30 minutes"
         },
-        "btn": {
-            "left": "Call a Master",
-            "right": "Message on Telegram 24/7"
+        "second": {
+          "before": "We provide",
+          "after": "all necessary materials"
         },
-        "check": {
-            "first": {
-                "before": "Free call-out within",
-                "after": " 30 minutes"
-            },
-            "second": {
-                "before": "We provide",
-                "after": "consumables"
-            },
-            "third": {
-                "before": "There's always a free",
-                "after": "master"
-            }
+        "third": {
+          "before": "There's always an available",
+          "after": "technician"
         }
+      }
     },
-    "Hello": "Hello"
-}
+    "swiper": {
+      "first": {
+        "sub": "We guarantee the quality of our work",
+        "desc": "We ensure high-quality plumbing services with a guarantee for all types of work. Professional technicians will quickly solve any plumbing issues — from minor repairs to complex installations. Our goal is your comfort and confidence in the result."
+      },
+      "second": {
+        "sub": "Fast and reliable",
+        "desc": "Is your plumbing malfunctioning? We are ready to quickly fix any issue. Fast response to calls and the use of modern technologies allows us to provide reliable service that will extend the life of your systems."
+      },
+      "third": {
+        "sub": "Affordable prices and transparent calculation",
+        "desc": "Transparent pricing is our priority. We offer affordable prices with no hidden fees. You will always know the final cost of the work before it begins, so you can feel confident and secure."
+      },
+      "fourth": {
+        "sub": "Individual approach to every client",
+        "desc": "Every order is a unique task, and we are ready to offer personalized solutions for your comfort. From simple repairs to complex system installations, we select the best options that meet your needs and budget."
+      },
+      "fifth": {
+        "sub": "Experienced specialists and modern equipment",
+        "desc": "Our team consists of professionals with many years of experience. We use only proven materials and modern equipment to guarantee the durability and reliability of all work performed."
+      }
+    },
+    "about": {
+      "first": {
+        "sub": "5+ YEARS",
+        "desc": "Plumbers and electricians with at least 5 years of experience"
+      },
+      "second": {
+        "sub": "FLEXIBILITY",
+        "desc": "We work with both legal entities and individuals"
+      },
+      "third": {
+        "sub": "1 HOUR",
+        "desc": "We arrive within 1 hour"
+      },
+      "fourth": {
+        "sub": "GUARANTEE",
+        "desc": "We provide a guarantee on the work performed"
+      },
+      "fifth": {
+        "sub": ">100",
+        "desc": "Positive reviews every month"
+      }
+    }
+  }
+  
