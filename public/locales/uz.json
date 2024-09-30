@@ -1,3 +1,29 @@
 {
-    "Hello":"Salom"
+    "intro": {
+        "title": "Toshkent va viloyatda elektr va santexnika xizmatlari",
+        "subtitle": {
+            "first": "Ustani hoziroq chaqiring va",
+            "second": "17% chegirma oling",
+            "third": "barcha xizmatlarga!"
+        },
+        "btn": {
+            "left": "Ustani chaqirish",
+            "right": "Telegramga yozish 24/7"
+        },
+        "check": {
+            "first": {
+                "before": "30 daqiqa ichida",
+                "after": " bepul chiqish"
+            },
+            "second": {
+                "before": "Biz ta'minlaymiz",
+                "after": "sarflanadigan materiallar bilan"
+            },
+            "third": {
+                "before": "Doimo mavjud",
+                "after": "bo'sh usta"
+            }
+        }
+    },
+    "Hello": "Salom"
 }

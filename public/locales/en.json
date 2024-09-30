@@ -1,3 +1,29 @@
 {
-    "Hello":"Hello"
+    "intro": {
+        "title": "Turnkey electrical and plumbing services in Tashkent and the region",
+        "subtitle": {
+            "first": "Order a master right now and",
+            "second": "get a 17% discount",
+            "third": "on all types of services!"
+        },
+        "btn": {
+            "left": "Call a Master",
+            "right": "Message on Telegram 24/7"
+        },
+        "check": {
+            "first": {
+                "before": "Free call-out within",
+                "after": " 30 minutes"
+            },
+            "second": {
+                "before": "We provide",
+                "after": "consumables"
+            },
+            "third": {
+                "before": "There's always a free",
+                "after": "master"
+            }
+        }
+    },
+    "Hello": "Hello"
 }

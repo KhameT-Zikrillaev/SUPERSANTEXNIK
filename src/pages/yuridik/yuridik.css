@@ -151,6 +151,7 @@
     box-shadow: 0 0 25px #4495D9, 0 0 50px rgba(0, 242, 96, 0.5), 0 0 75px rgba(0, 242, 96, 0.4);
     border-color: #4495D9;
     transform: translateY(-3px);
+    color: var(--white);
 }
 
 .Yuridik__text-con-btns-btn span {

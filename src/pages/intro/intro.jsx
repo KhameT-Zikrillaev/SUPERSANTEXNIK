@@ -1,7 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import "./intro.css";
 import introimages from '../../assets/images/intro__photo.png'
+import { useTranslation } from 'react-i18next';
 const Intro = () => {
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+  const { t, i18n } = useTranslation(); // Добавляем i18n для изменения языка
+
+  // При загрузке компонента проверяем сохраненный язык в localStorage
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage); // Устанавливаем сохраненный язык
+    }
+  }, [i18n]);
+
+  // Функция для смены языка и сохранения его в localStorage
+  const handleLanguageChange = (language) => {
+    i18n.changeLanguage(language); // Меняем язык через i18next
+    localStorage.setItem('language', language); // Сохраняем выбранный язык
+  };
+
+  const toggleBurgerMenu = () => {
+    setIsBurgerOpen(!isBurgerOpen);
+  };
   return (
     <>
       <section className="Intro">
@@ -13,19 +34,19 @@ const Intro = () => {
           />
           <div className="Intro__text">
             <h3 className="Intro__text-title-1">
-              Электрика и сантехника под ключ в Ташкенте и области
+              {t('intro.title')}
             </h3>
             <h4 className="Intro__text-title-2">
-              Закажите мастера прямо сейчас и <br />
-              <span>получите скидку 15%</span> на все виды услуг!
+              {t('intro.subtitle.first')} <br />
+              <span>{t('intro.subtitle.second')}</span> {t('intro.subtitle.third')}
             </h4>
             <div className="btn__container">
-              <div className="btn__send-1">Вызвать Мастера</div>
-              <div className="btn__send-2">Написать в телеграм 24/7</div>
+              <div className="btn__send-1">{t('intro.btn.left')}</div>
+              <div className="btn__send-2">{t('intro.btn.right')}</div>
             </div>
             <div className="info__container">
 
-                {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~1-card~~~~~~~~~~~~~~~~~~~~~ */}
+              {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~first-card~~~~~~~~~~~~~~~~~~~~~ */}
               <div className="info__container-card">
                 <div className="info__container-card-icon">
                   <div className="info__container-card-background"></div>
@@ -44,11 +65,10 @@ const Intro = () => {
                   </svg>
                 </div>
                 <p className="info__container-card-text">
-                  Бесплатный выезд <br />
-                  за 30 минут
+                  {t('intro.check.first.before')} <br />  {t('intro.check.first.after')}
                 </p>
               </div>
-                {/* ~~~~~~~~~~~~~~~~~~~~~~~~~2-card~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+              {/* ~~~~~~~~~~~~~~~~~~~~~~~~~second-card~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
               <div className="info__container-card">
                 <div className="info__container-card-icon">
                   <div className="info__container-card-background"></div>
@@ -67,11 +87,11 @@ const Intro = () => {
                   </svg>
                 </div>
                 <p className="info__container-card-text">
-                Обеспечиваем <br />
-                расходными материалами
+                  {t('intro.check.second.before')} <br />{t('intro.check.second.after')}
+              
                 </p>
               </div>
-                 {/* ~~~~~~~~~~~~~~~~~~~~~~~~~3-card~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+              {/* ~~~~~~~~~~~~~~~~~~~~~~~~~third-card~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
               <div className="info__container-card">
                 <div className="info__container-card-icon">
                   <div className="info__container-card-background"></div>
@@ -90,8 +110,8 @@ const Intro = () => {
                   </svg>
                 </div>
                 <p className="info__container-card-text">
-                Всегда есть свободный <br />
-                мастер
+                {t('intro.check.third.before')} <br />{t('intro.check.third.after')}
+                  
                 </p>
               </div>
             </div>
