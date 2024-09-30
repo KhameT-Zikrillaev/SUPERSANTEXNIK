@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import './about.css';
 import { useTranslation } from 'react-i18next';
-import photos from '../../assets/images/666.svg';
+import React, { useState, useEffect } from 'react';
 
+
+import photos from '../../assets/images/666.svg';
+import './about.css';
 const About = () => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
   const { t, i18n } = useTranslation(); // Добавляем i18n для изменения языка
