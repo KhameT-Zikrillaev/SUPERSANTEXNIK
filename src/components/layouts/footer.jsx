@@ -12,7 +12,7 @@ const Footer = () => {
   const token = import.meta.env.VITE_TG_TOKEN
   const chatId = import.meta.env.VITE_TG_CHATID
   const notify = () => {
-    toast("Successfully sent!", {
+    toast.success("Successfully sent!", {
     
     });
   }
@@ -40,6 +40,7 @@ const Footer = () => {
     const fullMessage= `Name: ${inputValueName}, Email: ${inputValueEmail}, telephone: ${inputValueTelephone}, sms:${inputValueDesc} `;
     event.preventDefault(); 
     fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${fullMessage}`) 
+    notify()
     setInputValueName('');
     setInputValueEmail('');
     setInputValueTelephone('');
@@ -48,7 +49,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
        <div className="footer-blue__fix-one">
-       <button onClick={notify}>test</button>
+       <ToastContainer />
       </div>
       <div className="footer-blue__fix-two">
 
