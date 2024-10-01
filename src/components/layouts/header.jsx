@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import './header.css'; // Импортируем стили (по желанию)
 import Navbar from '../navbar/navbar';
 
