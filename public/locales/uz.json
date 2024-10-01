@@ -115,8 +115,12 @@
             "sub": "Tekshirish va to'lov",
             "desc": "Siz ustaning bajarilgan ishini tekshirasiz va to'lovni amalga oshirasiz."
         }
-    }
-    
+    },
+    "messages": {
+        "arrive": "Biz 30 daqiqada yetib boramiz!",
+        "freeVisit": "Bepul tashrif",
+        "workingHours": "24/7 ochiq"
+      }  
     
     
 }

@@ -115,5 +115,10 @@
             "sub": "Review and Payment",
             "desc": "You review the work done by the master and make the payment."
         }
-    }
+    },
+    "messages": {
+          "arrive": "We will arrive in 30 minutes!",
+          "freeVisit": "Free visit",
+          "workingHours": "Open 24/7"
+        }    
 }

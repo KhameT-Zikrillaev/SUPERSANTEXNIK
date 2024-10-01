@@ -37,7 +37,7 @@ const Navbar = () => {
 
             <div className="navbar__menu">
                 <ul className="navbar__menu-ul">
-                    <li><a href="/">{t('Home')}</a></li> {/* Добавляем перевод для элементов меню */}
+                    <li><a href="/">{t('Home')}</a></li>
                     <li><a href="/about">{t('About')}</a></li>
                     <li><a href="/services">{t('Services')}</a></li>
                     <li><a href="/contact">{t('Contact')}</a></li>

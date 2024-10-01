@@ -1,33 +1,61 @@
 import React, { useState } from 'react';
-import './footer.css'; // Импортируем стили (по желанию)
 
+import './footer.css'; // Импортируем стили (по желанию)
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // ----------------img------------------------------------
 import footerLogo from "/logo.webp"
 import footerRightImg from "/footer-right-quest.png"
 
 // ---------------closed img------------------------------
 const Footer = () => {
-  const [inputValue, setInputValue] = useState('');
+  const token = import.meta.env.VITE_TG_TOKEN
+  const chatId = import.meta.env.VITE_TG_CHATID
+  const notify = () => {
+    toast("Successfully sent!", {
+    
+    });
+  }
 
-  const handleChange = (event) => {
-    setInputValue(event.target.value); // Обновляем состояние при изменении ввода
+  const [inputValueName, setInputValueName] = useState('');
+  const handleChangeName = (event) => {
+    setInputValueName(event.target.value); 
+  };
+  const [inputValueEmail, setInputValueEmail] = useState('');
+  const handleChangeEmail = (event) => {
+    setInputValueEmail(event.target.value); 
+  };
+  const [inputValueTelephone, setInputValueTelephone] = useState('');
+  const handleChangeTelephone = (event) => {
+    setInputValueTelephone(event.target.value); 
+  };
+  const [inputValueDesc, setInputValueDesc] = useState('');
+  const handleChangeDesc = (event) => {
+    setInputValueDesc(event.target.value); 
   };
 
+
+
   const handleSubmit = (event) => {
+    const fullMessage= `Name: ${inputValueName}, Email: ${inputValueEmail}, telephone: ${inputValueTelephone}, sms:${inputValueDesc} `;
     event.preventDefault(); 
-    console.log('Введенные данные:', inputValue); 
-    setInputValue('');
+    fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${fullMessage}`) 
+    setInputValueName('');
+    setInputValueEmail('');
+    setInputValueTelephone('');
+    setInputValueDesc('');
   };
   return (
     <footer className='footer'>
        <div className="footer-blue__fix-one">
-
+       <button onClick={notify}>test</button>
       </div>
       <div className="footer-blue__fix-two">
 
       </div>
       <div className="container">
         <div className="footer-wrapper">
+          
            <div className="footer-wrapper-con">
            <div className="footer-left">
             <div className="footer-logo">
@@ -69,12 +97,29 @@ const Footer = () => {
             {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FORM~~~~~~~~~~~~~~~~~~~~~~ */}
             <form className='footer-form' onSubmit={handleSubmit}>
               <input type="text" 
-               value={inputValue} 
-               onChange={handleChange} 
+               value={inputValueName} 
+               onChange={handleChangeName} 
+               required
                 placeholder='ИМЯ' />
-              <input type="text" placeholder='E-MAIL' />
-              <input type="text" placeholder='ТЕЛЕФОН' />
-              <textarea name="" id="" cols="30" rows="8" placeholder='ВАШЕ СООБЩЕНИЕ'></textarea>
+
+              <input type="email"
+               required
+               value={inputValueEmail} 
+               onChange={handleChangeEmail} 
+               placeholder='E-MAIL' />
+
+              <input type="text"
+               required
+              value={inputValueTelephone} 
+              onChange={handleChangeTelephone} 
+               placeholder='ТЕЛЕФОН' />
+
+               
+              <textarea name="" id="" cols="30" rows="8" 
+               required
+              value={inputValueDesc} 
+              onChange={handleChangeDesc} 
+              placeholder='ВАШЕ СООБЩЕНИЕ'></textarea>
               <button className='footer-btn' type='submit'>ОТПРАВИТЬ</button>
             </form>
 
