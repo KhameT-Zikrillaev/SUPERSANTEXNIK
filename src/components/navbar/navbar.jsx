@@ -34,7 +34,7 @@ const Navbar = () => {
                 <img src={headerLogo} alt="navbar-logo" />
                 <p className="navbar-logo__text">Супер <br /> Сантехник</p>
             </div>
-
+           {/* ~~~~~~~~~~~~~~~~~~~navbar~~~~~~~~~menu */}
             <div className="navbar__menu">
                 <ul className="navbar__menu-ul">
                     <li><a href="/">{t('burger.Home')}</a></li> {/* Добавляем перевод для элементов меню */}
@@ -42,11 +42,12 @@ const Navbar = () => {
                     <li><a href="/services">{t('burger.Services')}</a></li>
                     <li><a href="/contact">{t('burger.Contact')}</a></li>
                 </ul>
-            </div>
-
-            
+            </div>     
+            {/* ~~~~~~~~~~~~~~~~~~~photo vector~~~~~~~~  */}
             <img className="navbar__linear-1" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
             <img className="navbar__linear-2" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
+
+            {/* ~~~~~~~~~~~~~~~~~~~~lenguage~~~~~~~~~~~~ */}
             <div className="navbar__locales">
                 <select onChange={handleLanguageChange} defaultValue={localStorage.getItem('language') || 'en'}>
                     <option value="uz">UZ</option>
