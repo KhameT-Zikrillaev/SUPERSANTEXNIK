@@ -7,6 +7,17 @@ import footerRightImg from "/footer-right-quest.png"
 
 // ---------------closed img------------------------------
 const Footer = () => {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleChange = (event) => {
+    setInputValue(event.target.value); // Обновляем состояние при изменении ввода
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
+    console.log('Введенные данные:', inputValue); 
+    setInputValue('');
+  };
   return (
     <footer className='footer'>
        <div className="footer-blue__fix-one">
@@ -55,13 +66,19 @@ const Footer = () => {
             <div className="footer-right__img">
               <img src={footerRightImg} alt="footerRightImg" />
             </div>
-            <form className='footer-form'>
-              <input type="text" placeholder='ИМЯ' />
+            {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FORM~~~~~~~~~~~~~~~~~~~~~~ */}
+            <form className='footer-form' onSubmit={handleSubmit}>
+              <input type="text" 
+               value={inputValue} 
+               onChange={handleChange} 
+                placeholder='ИМЯ' />
               <input type="text" placeholder='E-MAIL' />
               <input type="text" placeholder='ТЕЛЕФОН' />
               <textarea name="" id="" cols="30" rows="8" placeholder='ВАШЕ СООБЩЕНИЕ'></textarea>
               <button className='footer-btn' type='submit'>ОТПРАВИТЬ</button>
             </form>
+
+
           </div>
            </div>
          

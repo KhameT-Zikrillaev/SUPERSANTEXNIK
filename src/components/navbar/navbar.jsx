@@ -18,7 +18,8 @@ const Navbar = () => {
     }, [i18n]);
 
     // Функция для смены языка и сохранения его в localStorage
-    const handleLanguageChange = (language) => {
+    const handleLanguageChange = (event) => {
+        const language = event.target.value;
         i18n.changeLanguage(language); // Меняем язык через i18next
         localStorage.setItem('language', language); // Сохраняем выбранный язык
     };
@@ -44,9 +45,11 @@ const Navbar = () => {
             </div>
 
             <div className="navbar__locales">
-                <button onClick={() => handleLanguageChange('uz')}>UZ</button>
-                <button onClick={() => handleLanguageChange('ru')}>RU</button>
-                <button onClick={() => handleLanguageChange('en')}>EN</button>
+                <select onChange={handleLanguageChange} defaultValue={localStorage.getItem('language') || 'en'}>
+                    <option value="uz">UZ</option>
+                    <option value="ru">RU</option>
+                    <option value="en">EN</option>
+                </select>
             </div>
 
             <img className="navbar__linear-1" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
