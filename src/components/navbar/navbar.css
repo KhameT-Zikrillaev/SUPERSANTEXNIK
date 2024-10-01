@@ -205,8 +205,14 @@
     text-align: center;
     
 }
+
 .navbar__menu-burger-ul li a{
     color:white;
+}
+.navbar__menu-burger-ul li a{
+    @media screen and (max-width:992px) {
+        font-size: 12px;
+    }
 }
 .activenavigation {
     transition: 1s;

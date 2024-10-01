@@ -44,6 +44,9 @@ const Navbar = () => {
                 </ul>
             </div>
 
+            
+            <img className="navbar__linear-1" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
+            <img className="navbar__linear-2" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
             <div className="navbar__locales">
                 <select onChange={handleLanguageChange} defaultValue={localStorage.getItem('language') || 'en'}>
                     <option value="uz">UZ</option>
@@ -51,9 +54,6 @@ const Navbar = () => {
                     <option value="en">EN</option>
                 </select>
             </div>
-
-            <img className="navbar__linear-1" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
-            <img className="navbar__linear-2" height={'100%'} src="./src/assets/images/nav_linear.png" alt="" />
 
             {/* ~~~~~~~~~~~~~~~~~~~burger~~~~~~~~~menu */}
             <div className={`nav__burger-btn ${isBurgerOpen ? 'btnactive' : ''}`} onClick={toggleBurgerMenu}>

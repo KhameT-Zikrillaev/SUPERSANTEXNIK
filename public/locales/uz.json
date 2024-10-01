@@ -120,6 +120,12 @@
             "desc": "Siz ustaning bajarilgan ishini tekshirasiz va to'lovni amalga oshirasiz."
         }
     },
+    "burger": {
+        "Home": "Bosh sahifa",
+        "About": "Biz haqimizda",
+        "Services": "Xizmatlar",
+        "Contact": "Aloqa"
+      },
     "messages": {
         "arrive": "Biz 30 daqiqada yetib boramiz!",
         "freeVisit": "Bepul tashrif",

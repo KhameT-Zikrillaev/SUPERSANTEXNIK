@@ -33,9 +33,9 @@ const Intro = () => {
             alt=""
           />
           <div className="Intro__text">
-            <h3 className="Intro__text-title-1">
+            <h1 className="Intro__text-title-1">
               {t('intro.title')}
-            </h3>
+            </h1>
             <h4 className="Intro__text-title-2">
               {t('intro.subtitle.first')} <br />
               <span>{t('intro.subtitle.second')}</span> {t('intro.subtitle.third')}
