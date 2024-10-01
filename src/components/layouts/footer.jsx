@@ -13,7 +13,6 @@ const Footer = () => {
   const chatId = import.meta.env.VITE_TG_CHATID
   const notify = () => {
     toast.success("Successfully sent!", {
-    
     });
   }
 
