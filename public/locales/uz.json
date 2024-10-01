@@ -67,6 +67,10 @@
         "fifth": {
             "sub": ">100",
             "desc": "Ҳар ойда 100 дан ортиқ ижобий фикрлар"
+        },
+        "sixth": {
+            "sub": "0 SO'M",
+            "desc": "Bepul chiqish. Buyurtma bajarilgan taqdirda"
         }
     },
     "legal": {
@@ -120,7 +124,8 @@
         "arrive": "Biz 30 daqiqada yetib boramiz!",
         "freeVisit": "Bepul tashrif",
         "workingHours": "24/7 ochiq"
-      }  
+      }
+    
     
     
 }

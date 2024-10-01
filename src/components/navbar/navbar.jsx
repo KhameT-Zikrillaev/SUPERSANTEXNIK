@@ -37,10 +37,10 @@ const Navbar = () => {
 
             <div className="navbar__menu">
                 <ul className="navbar__menu-ul">
-                    <li><a href="/">{t('Home')}</a></li>
-                    <li><a href="/about">{t('About')}</a></li>
-                    <li><a href="/services">{t('Services')}</a></li>
-                    <li><a href="/contact">{t('Contact')}</a></li>
+                    <li><a href="/">{t('burger.Home')}</a></li> {/* Добавляем перевод для элементов меню */}
+                    <li><a href="/about">{t('burger.About')}</a></li>
+                    <li><a href="/services">{t('burger.Services')}</a></li>
+                    <li><a href="/contact">{t('burger.Contact')}</a></li>
                 </ul>
             </div>
 
@@ -64,10 +64,10 @@ const Navbar = () => {
 
             <div className={`navbar__menu-burger ${isBurgerOpen ? 'activenavigation' : ''}`}>
                 <ul className='navbar__menu-burger-ul'>
-                    <li><a href="/">{t('Home')}</a></li> {/* Переводим элементы меню в бургер-меню */}
-                    <li><a href="/about">{t('About')}</a></li>
-                    <li><a href="/services">{t('Services')}</a></li>
-                    <li><a href="/contact">{t('Contact')}</a></li>
+                    <li><a href="/">{t('burger.Home')}</a></li> {/* Переводим элементы меню в бургер-меню */}
+                    <li><a href="/about">{t('burger.About')}</a></li>
+                    <li><a href="/services">{t('burger.Services')}</a></li>
+                    <li><a href="/contact">{t('burger.Contact')}</a></li>
                 </ul>
             </div>
         </nav>

@@ -67,7 +67,12 @@
         "fifth": {
             "sub": ">100",
             "desc": "Positive reviews every month"
+        },
+        "sixth": {
+            "sub": "0 SUM",
+            "desc": "Free visit. In case of order execution"
         }
+        
     },
     "legal": {
         "title": "FOR LEGAL ENTITIES",
@@ -116,9 +121,15 @@
             "desc": "You review the work done by the master and make the payment."
         }
     },
+    "burger": {
+        "Home": "Home",
+        "About":"About",
+        "Services":"Services",
+        "Contact":"Contact"
+    },
     "messages": {
           "arrive": "We will arrive in 30 minutes!",
           "freeVisit": "Free visit",
           "workingHours": "Open 24/7"
-        }    
+    }    
 }

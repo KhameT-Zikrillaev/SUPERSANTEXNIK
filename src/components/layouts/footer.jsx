@@ -130,7 +130,7 @@ const Footer = () => {
           <img  className='footer-wrapper-img' src="./src/assets/images/footerphoto.png" alt="" />
         </div>
         <div className="foote-company">
-            <h3 className='foote-company-text'>© 2023-2024. ООО "Super-Santexnik"</h3>
+            <h3 className='foote-company-text'>© 2023-2024. ООО "Супер-Сантехник"</h3>
         </div>
 
       </div>
