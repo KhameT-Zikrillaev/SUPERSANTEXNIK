@@ -67,6 +67,10 @@
         "fifth": {
             "sub": ">100",
             "desc": "Ҳар ойда 100 дан ортиқ ижобий фикрлар"
+        },
+        "sixth": {
+            "sub": "0 SO'M",
+            "desc": "Bepul chiqish. Buyurtma bajarilgan taqdirda"
         }
     },
     "legal": {
@@ -115,8 +119,11 @@
             "sub": "Tekshirish va to'lov",
             "desc": "Siz ustaning bajarilgan ishini tekshirasiz va to'lovni amalga oshirasiz."
         }
+    },
+    "burger": {
+        "Home": "Bosh sahifa",
+        "About": "Biz haqimizda",
+        "Services": "Xizmatlar",
+        "Contact": "Aloqa"
     }
-    
-    
-    
 }

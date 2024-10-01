@@ -67,7 +67,12 @@
         "fifth": {
             "sub": ">100",
             "desc": "Positive reviews every month"
+        },
+        "sixth": {
+            "sub": "0 SUM",
+            "desc": "Free visit. In case of order execution"
         }
+        
     },
     "legal": {
         "title": "FOR LEGAL ENTITIES",
@@ -115,5 +120,11 @@
             "sub": "Review and Payment",
             "desc": "You review the work done by the master and make the payment."
         }
+    },
+    "burger": {
+        "Home": "Home",
+        "About":"About",
+        "Services":"Services",
+        "Contact":"Contact"
     }
 }
